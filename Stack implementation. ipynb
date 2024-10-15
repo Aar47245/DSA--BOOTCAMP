@@ -1,0 +1,89 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6e4483e2-f71d-4b33-bc29-6c9a0dd05a5b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l=[]\n",
+    "size = 5\n",
+    "while True:\n",
+    "    i=int(input('''\n",
+    "        Enter a Number \n",
+    "        1. push\n",
+    "        2. pop\n",
+    "        3. Display\n",
+    "        4. exit\n",
+    "        \n",
+    "        Enter Your Choice :- '''))\n",
+    "    \n",
+    "    def push():\n",
+    "    \n",
+    "        if  size == len(l)-1:\n",
+    "            print(\"Stack OverFlow\")\n",
+    "            \n",
+    "        else:\n",
+    "            a=int(input(\"Enter a Number :- \"))\n",
+    "            l.append(a)\n",
+    "            print(f\"Stack has Successfully Push\")\n",
+    "\n",
+    "    def pop():\n",
+    "\n",
+    "        if len(l) == 0:\n",
+    "            print(\"Stack UnderFlow\")\n",
+    "        else:\n",
+    "            del l[-1]\n",
+    "            print(\"Stack has Successfully PoP \")\n",
+    "\n",
+    "    def display():\n",
+    "        if len(l) == 0:\n",
+    "            print(\"Stack UnderFlow\")\n",
+    "        else:\n",
+    "            print(\"Stack \",l)\n",
+    "    \n",
+    "    \n",
+    "    if i==1:\n",
+    "        push()\n",
+    "    elif i==2:\n",
+    "        pop()\n",
+    "    elif i==3:\n",
+    "        display()\n",
+    "    elif i==4:\n",
+    "        print(\"Stack has Exits..\")\n",
+    "    else:\n",
+    "        print(\"Invalid Choice , Please Enter Number Between 1 to 4\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "81622448-f835-45f7-84fc-197606c051f1",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
